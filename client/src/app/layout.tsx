@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "Watch Movies Online for Free",
 };
 
-export default function RootLayout({
-  children,
-}: {
+type RootProps = {
   children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  );
-}
+};
+
+const RootLayout = ({ children }: RootProps) => (
+  <html lang="en">
+    <body>{children}</body>
+  </html>
+);
+
+export default RootLayout;

@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Providers } from "./providers";
 import "../styles/globals.css";
 
+// Components
+import Header from "../components/Header";
+
 export const metadata: Metadata = {
   title: "Paagal | Watch Movies Online",
   description: "Watch Movies Online for Free",
@@ -14,7 +17,10 @@ type RootProps = {
 const RootLayout = ({ children }: RootProps) => (
   <html lang="en">
     <body>
-      <Providers>{children}</Providers>
+      <Providers>
+        <Header />
+        {children}
+      </Providers>
     </body>
   </html>
 );

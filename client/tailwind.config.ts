@@ -9,11 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "chinese-black": "#151515",
-        "smoky-black": "#0E0E0E",
-        "vivid-red": "#F70D19",
-        "ku-crimson": "#E10013",
-        "harvard-crimson": "#C00016",
+        "night-black": "#0F0F0F",
       },
     },
   },

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 
 // Components
-import Header from "../components/Header";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Paagal | Watch Movies Online",

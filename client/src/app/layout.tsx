@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Providers } from "./providers";
 import "../styles/globals.css";
 
 // Components
@@ -16,11 +15,9 @@ type RootProps = {
 
 const RootLayout = ({ children }: RootProps) => (
   <html lang="en">
-    <body>
-      <Providers>
-        <Header />
-        {children}
-      </Providers>
+    <body className="bg-rich-black">
+      <Header />
+      {children}
     </body>
   </html>
 );
